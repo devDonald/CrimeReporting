@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.donald.crimereporting.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Report a Crime"
+        android:textColor="#2d39a3"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.506" />
+
+    <TableRow
+        android:id="@+id/tab1"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/tabBack"
+        app:layout_constraintLeft_toLeftOf="@+id/textView"
+        app:layout_constraintRight_toRightOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="55dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of Reporter:  "
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="(Optional)"
+            android:inputType="textCapWords"
+            android:textStyle="italic" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tab2"
+        android:layout_width="313dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/tabBack"
+        app:layout_constraintLeft_toLeftOf="@+id/tab1"
+        app:layout_constraintRight_toRightOf="@+id/tab1"
+        app:layout_constraintTop_toBottomOf="@+id/tab1"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="87dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number:  "
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="11"
+            android:hint="(Optional)"
+            android:inputType="phone" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tab3"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/tabBack"
+        app:layout_constraintLeft_toLeftOf="@+id/tab2"
+        app:layout_constraintRight_toRightOf="@+id/tab2"
+        app:layout_constraintTop_toBottomOf="@+id/tab2"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="138dp">
+
+        <Spinner
+            android:id="@+id/crimeType"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/crimeType" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tab4"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/tabBack"
+        app:layout_constraintLeft_toLeftOf="@+id/tab3"
+        app:layout_constraintRight_toRightOf="@+id/tab3"
+        app:layout_constraintTop_toBottomOf="@+id/tab3"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="166dp">
+
+        <EditText
+            android:id="@+id/crimeDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description of crime"
+            android:inputType="textCapWords" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tab5"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/tabBack"
+        app:layout_constraintLeft_toLeftOf="@+id/tab4"
+        app:layout_constraintRight_toRightOf="@+id/tab4"
+        app:layout_constraintTop_toBottomOf="@+id/tab4">
+
+        <Spinner
+            android:id="@+id/states"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/states" />
+
+        <EditText
+            android:id="@+id/crimePlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Place of Crime"
+            android:textSize="15sp"
+            android:inputType="textCapSentences"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tab6"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/tabBack"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="@+id/tab5"
+        app:layout_constraintRight_toRightOf="@+id/tab5"
+        app:layout_constraintTop_toBottomOf="@+id/tab5">
+
+        <Button
+            android:id="@+id/btn_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crime Date"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="50dp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crime Time"
+
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tab7"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/tabBack"
+        app:layout_constraintLeft_toLeftOf="@+id/tab6"
+        app:layout_constraintRight_toRightOf="@+id/tab6"
+        app:layout_constraintTop_toBottomOf="@+id/tab6">
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:drawable/ic_menu_camera" />
+        <ImageView
+            android:id="@+id/camImage"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            />
+
+        <Button
+            android:id="@+id/video"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:background="@android:drawable/presence_video_away" />
+
+        <VideoView
+            android:id="@+id/video2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/tabBack"/>
+
+        <Button
+            android:id="@+id/audio"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+            android:background="@android:drawable/ic_btn_speak_now" />
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tab8"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/tabBack"
+        app:layout_constraintLeft_toLeftOf="@+id/tab7"
+        app:layout_constraintRight_toRightOf="@+id/tab7"
+        app:layout_constraintTop_toBottomOf="@+id/tab7"
+        tools:layout_editor_absoluteY="312dp">
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email for Notification on crime"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tab9"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/tabBack"
+        app:layout_constraintLeft_toLeftOf="@+id/tab8"
+        app:layout_constraintRight_toRightOf="@+id/tab8"
+        app:layout_constraintTop_toBottomOf="@+id/tab8">
+
+
+        <ProgressBar
+            android:layout_marginLeft="80dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:id="@+id/pbar"/>
+
+    </TableRow>
+
+
+    <Button
+        android:id="@+id/report"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="9dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Report"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/tab9"
+        app:layout_constraintRight_toLeftOf="@+id/reset"
+        app:layout_constraintTop_toBottomOf="@+id/tab9" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_green_light"
+        android:text="reset"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintRight_toRightOf="@+id/tab9"
+        app:layout_constraintTop_toBottomOf="@+id/tab9" />
+
+
+</android.support.constraint.ConstraintLayout>

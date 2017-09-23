@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">CrimeReporting</string>
+
+    <string-array name="crimeCat">
+        <item> Select Crime Category</item>
+        <item>Personal crime </item>
+        <item> Property crime</item>
+        <item> Inchoate crimes</item>
+        <item> Statutory crimes</item>
+    </string-array>
+
+    <string-array name="crimeType">
+        <item> Select crime type</item>
+        <item> Offence Against the Person</item>
+        <item> Violent Offence</item>
+        <item> Sexual Offence</item>
+        <item> Offence Against Property</item>
+        <item> Forgery, Personation and Cheating</item>
+        <item>Firearms and Offensive weapons</item>
+        <item> Offences against the State</item>
+        <item> Offences against the Crown/Government</item>
+        <item> Harmful or dangerous Drugs</item>
+        <item> Offences against religion and public worship</item>
+        <item> Offences Against public justice</item>
+        <item> Public order offence</item>
+        <item>Commerce, financial markets and insolvency</item>
+        <item> offences against public morals and public policy</item>
+        <item> Motor vehicle offences</item>
+        <item> Conspiracy, incitement and attempt to commit crime</item>
+        <item> Inchoate of offence</item>
+        <item> Juvenile delinquency</item>
+        <item> Victimless crime</item>
+        <item> Theft/Robbery </item>
+    </string-array>
+    <string-array name="states">
+        <item>Select State</item>
+        <item>Abia</item>
+        <item>Adamawa</item>
+        <item>Anambara</item>
+        <item>Akwa Ibom</item>
+        <item>Bauchi</item>
+        <item>Bayelsa</item>
+        <item>Benue</item>
+        <item>Borno</item>
+        <item>Cross River</item>
+        <item>Delta</item>
+        <item>Ebonyi</item>
+        <item> Enugu</item>
+        <item> Edo</item>
+        <item> Ekiti</item>
+        <item> Gombe</item>
+        <item> Imo</item>
+        <item> Jigawa</item>
+        <item> Kaduna</item>
+        <item> Kano</item>
+        <item> Katsina</item>
+        <item> Kebbi</item>
+        <item> Kogi</item>
+        <item> Kwara</item>
+        <item> Lagos</item>
+        <item> Nasarawa</item>
+        <item> Niger</item>
+        <item> Ogun</item>
+        <item> Ondo</item>
+        <item> Osun</item>
+        <item> Oyo</item>
+        <item> Plateau</item>
+        <item> Rivers</item>
+        <item> Sokoto</item>
+        <item> Taraba</item>
+        <item> Yobe</item>
+        <item> Zamfara</item>
+        <item>FCT</item>
+
+    </string-array>
+
+</resources>
